@@ -35,7 +35,9 @@ export default function UploadReq(){
                 StandardDeviation : StandardDeviation,
                 SpecificLevel : SpecificLevel,
                 Chance : Chance,
-            }
+            },
+            UserID : searchParams.get("UserID"),
+            ProjectID : searchParams.get("ProjectID")
         }
         APIuploadReq(data)
             .then((response)=>{
